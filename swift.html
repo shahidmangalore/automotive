@@ -10,23 +10,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        $('#header').load('header.html');
+    });
+    $(function(){
+        $('#footer').load('footer.html');
+    });
+</script>
 </head>
 <body>
     <section    > 
-        <nav>
-            <a href="index.html"><img style="width:230px;" src="images/project.jpg" alt=""></a>
-            <a href="index.html"><h1 style="color: aliceblue;font-size: 32px;">automotive.in</h1></a>
-            <div class="nav-links" id="navlinks">
-                <i class="fa fa-times" onclick="hidemenu()"></i>
-                <ul>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="blogs.html">Blogs</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showmenu()" ></i>
-        </nav>
+        <div id="header"></div>
         </section>
 <h1 style="margin-left: 30px;">Maruti Suzuki Swift</h1>
 <section class="sub-course">
@@ -119,17 +115,7 @@ Driving Range:
 858 Km
     </p>
 </div>
-        <section class="footer" id="foot">
-            <h4>About us</h4>
-            <p>Automotive.in is a car info portal. <br> we are determined to provide you accurate details about the available market cars</p>
-            <div class="icons">
-                <i class="fa fa-facebook" ></i>
-                <i class="fa fa-twitter" ></i>
-                <i class="fa fa-instagram" ></i>
-                <i class="fa fa-linkedin" ></i>
-            </div>
-            <p>made with <i class="fa fa-heart-o" ></i> by youtube</p>
-        </section>
+<div id="footer"></div>
 
         </body>
         </html>
