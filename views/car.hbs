@@ -1,0 +1,64 @@
+{{#each all_cars}}
+{{#each car}}
+<h1 style="margin-left: 30px;">{{name}}</h1>
+
+<section class="sub-course">
+    <div class="row">
+        <div style="background: #fff;box-shadow: none;" class="pop-cars">
+            
+            <img style="width: 420px;" src="{{image}}" alt="">
+            
+        
+        
+        </div>
+        <p style="font-size: 20px;"><strong>  price starts from {{price}} lacs onwards <br> in mangaluru</strong></p>
+        <p style="font-size: 20px;">variants:</p>
+        <ul style="font-size: 20px;">
+            {{#each variant}}
+            <li>{{this}}</li>
+            
+            {{/each}}
+        </ul>
+</section>
+
+<h1 style="margin-left: 30px;">Images</h1>
+<div>
+   {{#each images}}
+   <img src="{{this}}" alt="">
+   {{/each}}
+</div>
+<hr>
+
+<h1>{{name}} overview</h1>
+{{#each overview}}
+<table>
+    
+        <tr>
+            
+            <td>engine</td>
+            <td>{{this.engine}}</td>
+            
+        </tr>
+        
+        <tr>
+            <td>transmission</td>
+            <td>{{this.transmission}}</td>
+        </tr>
+        <tr>
+            <td>seating capacity</td>
+            <td>{{this.seating_capacity}}</td>
+        </tr>
+        <tr>
+            <td>fuel</td>
+            <td>{{this.fuel}}</td>
+        </tr>
+    </table>
+    {{/each}}
+{{/each}}
+
+
+
+
+{{/each}}
+
+

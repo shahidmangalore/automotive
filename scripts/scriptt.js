@@ -7,3 +7,4 @@ function hidemenu(){
     navlinks.style.right="-200px"
     
 }
+
